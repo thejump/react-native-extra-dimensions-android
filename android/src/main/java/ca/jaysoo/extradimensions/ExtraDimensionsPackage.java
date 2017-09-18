@@ -13,15 +13,11 @@ import java.util.ArrayList;
 
 public class ExtraDimensionsPackage implements ReactPackage {
 
-  
-
 
     @Override
-    public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        List<NativeModule> modules = new ArrayList<>();
-
-        modules.add(new ExtraDimensionsModule(reactContext));
-
-        return modules;
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        return Arrays.asList();
     }
+
+
 }
